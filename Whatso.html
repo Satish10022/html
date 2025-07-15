@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whatso Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #26b5d2, #19d260);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: transparent;
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .login-box h2 {
+      margin-bottom: 30px;
+    }
+
+    .login-box input[type="tel"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      outline: none;
+    }
+
+    .login-box a {
+      display: block;
+      text-align: left;
+      margin-top: 10px;
+      font-size: 14px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+    }
+
+    .login-box button {
+      width: 48%;
+      padding: 10px;
+      background-color: white;
+      color: #6a1b9a;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Welcome to Whatso</h2>
+
+    <input type="tel" placeholder="phone number" required>
+    <input type="password" placeholder="Password" required>
+
+    <a href="#">Forgot Password</a>
+
+    <div class="button-row">
+      <button onclick="window.location.href='signup.html'">LOGIN</button>
+      <button onclick="window.location.href='signup.html'">SIGN UP</button>
+
+    </div>
+  </div>
+
+</body>
+</html>
